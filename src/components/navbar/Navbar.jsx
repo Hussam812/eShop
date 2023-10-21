@@ -13,16 +13,24 @@ const Navbar = () => {
       </div>
       <ul className="nav-menu">
         <li onClick={() => setMenu("shop")}>
-          <Link to="/">Shop {menu === "shop" && <hr />}</Link>
+          <Link style={{ textDecoration: "none" }} to="/">
+            Shop {menu === "shop" && <hr />}
+          </Link>
         </li>
         <li onClick={() => setMenu("mens")}>
-          <Link to="/mens">Menu {menu === "mens" && <hr />}</Link>
+          <Link style={{ textDecoration: "none" }} to="/mens">
+            Menu {menu === "mens" && <hr />}
+          </Link>
         </li>
         <li onClick={() => setMenu("womens")}>
-          <Link to="/womens">Woman{menu === "womens" && <hr />}</Link>
+          <Link style={{ textDecoration: "none" }} to="/womens">
+            Woman{menu === "womens" && <hr />}
+          </Link>
         </li>
         <li onClick={() => setMenu("kids")}>
-          <Link to="/kids">Kids{menu === "kids" && <hr />}</Link>
+          <Link style={{ textDecoration: "none" }} to="/kids">
+            Kids{menu === "kids" && <hr />}
+          </Link>
         </li>
       </ul>
       <div className="nav-login-cart">
