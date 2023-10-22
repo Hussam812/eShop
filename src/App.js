@@ -2,6 +2,7 @@ import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Cart, LoginSignup, Product, Shop, ShopCategory } from "./pages";
+import Footer from "./components/footer/Footer";
 function App() {
   return (
     <div>
@@ -18,6 +19,7 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/login" element={<LoginSignup />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
