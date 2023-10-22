@@ -19,7 +19,7 @@ const Navbar = () => {
         </li>
         <li onClick={() => setMenu("mens")}>
           <Link style={{ textDecoration: "none" }} to="/mens">
-            Menu {menu === "mens" && <hr />}
+            Men {menu === "mens" && <hr />}
           </Link>
         </li>
         <li onClick={() => setMenu("womens")}>
