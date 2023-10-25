@@ -10,6 +10,7 @@
     margin-bottom: 150px;
     background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
     gap: 30px;
+    overflow: hidden;
 }
 
 .newsletter h1 {
@@ -51,4 +52,43 @@
     color: white;
     font-size: 16px;
     cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 375px) {
+    .newsletter {
+        align-items: flex-start;
+        padding: 10px 20px;
+
+    }
+    .newsletter h1 {
+        font-size: 25px;
+    }
+
+    .newsletter p {
+        font-size: 16px;
+    }
+
+    .newsletter div{
+        width: 250px;
+        height: 60px;
+    }
+    .newsletter input {
+        width: 180px;
+    }
+
+    .newsletter div button {
+        width: 60px;
+        height: 60px;
+
+    }
+
+
+
+
+
+
+
+
 }
