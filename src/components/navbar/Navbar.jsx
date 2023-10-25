@@ -33,7 +33,7 @@ const Menu = ({ menu, setMenu, mobileMenu }) => (
 
 const Navbar = () => {
   const [menu, setMenu] = useState("shop");
-  const [mobileMenu, setMobileMenu] = useState(true);
+  const [mobileMenu, setMobileMenu] = useState(false);
 
   const { getTotlCartItems } = useContext(ShopContext);
   return (

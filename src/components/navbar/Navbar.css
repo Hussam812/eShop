@@ -99,11 +99,12 @@
         top: 80px;
         border-left: 1px solid #f3f3f3;
         box-shadow: 0 0 2px -2px black;
+        overflow: hidden;
 
         transition: all .5s linear;
     }
     .nav-menu.active {
-        transform: translateX(-350px);
+        right: 0
     }
 
     .nav-login-cart{

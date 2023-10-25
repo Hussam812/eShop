@@ -52,3 +52,37 @@
     align-items: center;
     justify-content: center;
 }
+
+@media screen and (max-width: 375px) {
+.hero{
+    overflow: hidden;
+    flex-direction: column-reverse;
+    max-width: 375px;
+}
+.hero-left {
+    padding-left: 20px;
+}
+.hero-left h2 {
+    font-size: 20px;
+}
+
+.hero-left p {
+    font-size: 40px;
+}
+.hero-hand-icon img {
+    width: 40px;
+}
+.hero-right img{
+    width: 290px;
+}
+.hero-latest-btn {
+    width: 250px;
+    height: 70px;
+    border-radius: 75px;
+    margin-top: 30px;
+    color: white;
+    background-color: #ff4141;
+    font-size: 16px;
+    font-weight: 500;
+}
+}
