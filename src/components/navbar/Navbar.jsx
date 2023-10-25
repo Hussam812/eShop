@@ -1,10 +1,41 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./Navbar.css";
 import Logo from "../assets/logo.png";
 import CartIcon from "../assets/cart_icon.png";
 import { Link } from "react-router-dom";
+import { ShopContext } from "../../context/ShopContext";
+import humbergerMenu from "../assets/Hamburger_icon.svg.png";
+import close from "../assets/close_png.png";
+const Menu = ({ menu, setMenu, mobileMenu }) => (
+  <ul className={`${mobileMenu ? "nav-menu active" : "nav-menu"}`}>
+    <li onClick={() => setMenu("shop")}>
+      <Link style={{ textDecoration: "none" }} to="/">
+        Shop {menu === "shop" && <hr />}
+      </Link>
+    </li>
+    <li onClick={() => setMenu("mens")}>
+      <Link style={{ textDecoration: "none" }} to="/mens">
+        Men {menu === "mens" && <hr />}
+      </Link>
+    </li>
+    <li onClick={() => setMenu("womens")}>
+      <Link style={{ textDecoration: "none" }} to="/womens">
+        Woman{menu === "womens" && <hr />}
+      </Link>
+    </li>
+    <li onClick={() => setMenu("kids")}>
+      <Link style={{ textDecoration: "none" }} to="/kids">
+        Kids{menu === "kids" && <hr />}
+      </Link>
+    </li>
+  </ul>
+);
+
 const Navbar = () => {
   const [menu, setMenu] = useState("shop");
+  const [mobileMenu, setMobileMenu] = useState(true);
+
+  const { getTotlCartItems } = useContext(ShopContext);
   return (
     <div className="navbar">
       <Link
@@ -17,28 +48,7 @@ const Navbar = () => {
           <p>SHOPPER</p>
         </div>
       </Link>
-      <ul className="nav-menu">
-        <li onClick={() => setMenu("shop")}>
-          <Link style={{ textDecoration: "none" }} to="/">
-            Shop {menu === "shop" && <hr />}
-          </Link>
-        </li>
-        <li onClick={() => setMenu("mens")}>
-          <Link style={{ textDecoration: "none" }} to="/mens">
-            Men {menu === "mens" && <hr />}
-          </Link>
-        </li>
-        <li onClick={() => setMenu("womens")}>
-          <Link style={{ textDecoration: "none" }} to="/womens">
-            Woman{menu === "womens" && <hr />}
-          </Link>
-        </li>
-        <li onClick={() => setMenu("kids")}>
-          <Link style={{ textDecoration: "none" }} to="/kids">
-            Kids{menu === "kids" && <hr />}
-          </Link>
-        </li>
-      </ul>
+      <Menu menu={menu} setMenu={setMenu} mobileMenu={mobileMenu} />
       <div className="nav-login-cart">
         <Link to="/login">
           <button>Login</button>
@@ -46,7 +56,15 @@ const Navbar = () => {
         <Link to="/cart">
           <img src={CartIcon} alt="" />
         </Link>
-        <div className="nav-cart-count">0</div>
+        <div className="nav-cart-count">{getTotlCartItems()}</div>
+      </div>
+
+      <div className="nav-menu-mobile">
+        <img
+          src={mobileMenu ? close : humbergerMenu}
+          alt=""
+          onClick={() => setMobileMenu(!mobileMenu)}
+        />
       </div>
     </div>
   );
