@@ -75,12 +75,13 @@
         height: 60px;
     }
     .newsletter input {
-        width: 180px;
+        width: 156px;
     }
 
     .newsletter div button {
         width: 60px;
         height: 60px;
+        font-size: 12px;
 
     }
 

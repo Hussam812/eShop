@@ -58,6 +58,7 @@
     overflow: hidden;
     flex-direction: column-reverse;
     max-width: 375px;
+    margin-top: 78px;
 }
 .hero-left {
     padding-left: 20px;

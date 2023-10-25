@@ -27,6 +27,8 @@
     .popular{
         height: unset;
         overflow: hidden;
+        margin-bottom: 50px;
+
     }
     .popular h1 {
         font-size: 30px;

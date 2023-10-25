@@ -38,3 +38,34 @@
     font-size: 18px;
     font-weight: 500;
 }
+
+
+@media screen and (max-width: 375px) {
+    .shop-category{
+        margin-top: 80px;
+        overflow: hidden;
+    }
+    .shopcategory-banner{
+        width: 95%;
+        margin: 10px auto;
+
+    }
+    .shopcategory-inexSort{
+        margin: 0px 10px;
+
+    }
+    .shopcategory-inexSort p {
+        font-size: 14px;
+        
+    }
+    .shopcategory-sort{
+        font-size: 14px;
+    }
+    .shopcategory-products {
+        margin: 20px ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}

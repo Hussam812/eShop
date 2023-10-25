@@ -57,3 +57,35 @@
     height: 3px;
     background-color: #c7c7c7;
 }
+
+
+
+@media screen and (max-width: 375px) {
+   
+    
+    .footer-logo img {
+        width: 60px;
+    }
+
+    .footer-logo p {
+        font-size: 30px;
+    }
+
+     .footer-links{
+        font-size: 20px;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: max-content;
+        padding-right: 90px
+    }
+ 
+
+
+ .footer-copyright {
+    font-size: 14px;
+ }
+
+
+}
