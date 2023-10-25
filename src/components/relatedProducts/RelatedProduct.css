@@ -22,3 +22,19 @@
     gap: 30px;
     margin-top: 50px;
 }
+
+
+@media screen and (min-width: 300px) and (max-width: 450px){
+    .relatedproducts {
+        height: unset;
+        margin-bottom: 30px;
+    }
+
+    .relatedproducts h1 {
+        font-size: 30px;
+
+    }
+    .relatedproducts-item {
+        flex-direction: column;
+    }
+}

@@ -31,3 +31,14 @@
     padding: 48px;
     padding-bottom: 70px;
 }
+
+@media screen and (min-width: 300px) and (max-width: 450px){
+    .descriptionbox {
+        margin: 50px 30px;
+        
+    }
+    .deescriptionbox-description{
+        max-width: 300px;
+        padding: 22px;
+    }
+}

@@ -27,7 +27,7 @@
 }
 
 
-@media screen and (max-width: 375px) {
+@media screen and  (min-width: 300px) and (max-width: 450px)  {
     .new-collections {
         height: unset;
     }

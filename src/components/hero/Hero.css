@@ -53,11 +53,10 @@
     justify-content: center;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 300px) and (max-width: 450px)  {
 .hero{
     overflow: hidden;
     flex-direction: column-reverse;
-    max-width: 375px;
     margin-top: 78px;
 }
 .hero-left {

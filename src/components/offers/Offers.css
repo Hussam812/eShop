@@ -47,7 +47,7 @@
 }
 
 
-@media screen and (max-width: 375px) {
+@media screen and  (min-width: 300px) and (max-width: 450px)   {
     .offers{
         width: 65%;
         margin-bottom: 30px;
