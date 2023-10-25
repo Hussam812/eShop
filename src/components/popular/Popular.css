@@ -22,3 +22,21 @@
     margin-top: 50px;
     display: flex;
 }
+
+@media screen and (max-width: 375px) {
+    .popular{
+        height: unset;
+        overflow: hidden;
+    }
+    .popular h1 {
+        font-size: 30px;
+        margin-top: 50px;
+        
+    }
+    .popular-item {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        gap: 30px;
+    }
+}
