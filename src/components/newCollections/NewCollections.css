@@ -25,3 +25,22 @@
     margin-top: 50px;
     gap: 50px;
 }
+
+
+@media screen and (max-width: 375px) {
+    .new-collections {
+        height: unset;
+    }
+    .new-collections h1 {
+        font-size: 30px;
+        margin-top: 50px;
+        
+    }
+    .collections {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        gap: 30px;
+    }
+}
